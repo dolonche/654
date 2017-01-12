@@ -210,6 +210,26 @@ h2::after {
 
 .cards-container .col-md-4:nth-child() {}
 
+.cards-container .col-md-3:nth-child(1) {
+    padding-left: 0;
+    padding-right: 26px;
+}
+
+.cards-container .col-md-3:nth-child(2) {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+.cards-container .col-md-3:nth-child(3) {
+    padding-left: 26px;
+    padding-right: 0;
+}
+
+.cards-container .col-md-3:nth-child(4) {
+    padding-left: 26px;
+    padding-right: 0;
+}
+
 .card .tag {
     text-align: center;
     padding-top: 10px;
@@ -362,4 +382,77 @@ h2::after {
 
 .social-list h2 {
     margin-top: 30px;
+}
+
+main {
+    position: relative;
+}
+
+main::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    bottom: -170px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 100vw 150px 0;
+    border-color: transparent rgba(0, 0, 0, 0.4) transparent transparent;
+}
+
+.social-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    margin-top: 60px;
+}
+
+.social-column li {
+    display: inline-block;
+}
+
+.social-column li i {
+    margin-right: 40px;
+    color: black;
+    transition: 0.3s;
+}
+
+.social-column li i:hover {
+    color: #F44336;
+}
+
+footer {
+    position: relative;
+    margin-top: 20px;
+}
+
+footer::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 100vw 150px 0px;
+    transform: rotate(180deg);
+    border-color: transparent rgba(244, 67, 54, 0.75) transparent transparent;
+}
+
+footer h2 {
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 3px;
+}
+
+.inner-caption h2 {
+    text-align: center;
+    display: block;
+    font-size: 28px;
+}
+
+.inner-caption h2::after {
+    display: none;
 }
