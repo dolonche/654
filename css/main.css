@@ -7,6 +7,7 @@ body {
 .logo img {
     width: 100%;
     margin-top: 16px;
+    height: 90px;
 }
 
 .name {
@@ -23,15 +24,16 @@ body {
 .menu {
     width: 40px;
     height: 40px;
-    margin-top: 28px;
-    margin-left: 42px;
-    cursor: pointer
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 30px;
 }
 
 .menu span {
     display: block;
     position: absolute;
-    top: 48px;
+    top: 20px;
     right: 0px;
     height: 3px;
     width: 40px;
@@ -263,6 +265,101 @@ h2::after {
     width: 100%;
 }
 
-.tags-list{
-    margin-top: 38px;
+.tags-list {
+    margin-top: 32px;
+}
+
+.tags-list h2 {
+    margin-top: -1px;
+}
+
+.tags-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.tags-list li {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.tags-list ul li:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+.tags-list li a {
+    color: black;
+    transition: 0.3s all;
+}
+
+.tags-list li a:hover {
+    opacity: 0.8;
+    color: #F44336;
+}
+
+.social-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.social-list li {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.social-list li a {
+    color: black;
+    transition: 0.3s all;
+}
+
+.social-list li a:hover {
+    color: #F44336;
+}
+
+.social-list i {
+    float: left;
+    width: 40px;
+    height: 40px;
+    clear: left;
+}
+
+.social-list li:first-child {
+    margin-top: -10px;
+}
+
+.social-list li:first-child i {
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+.social-list li:nth-child(2) i {
+    padding-left: 7px;
+    padding-top: 5px;
+}
+
+.social-list li:nth-child(3) i {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.social-list li:nth-child(4) i {
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.social-list span {
+    float: left;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.social-list h2 {
+    margin-top: 30px;
 }
