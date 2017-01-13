@@ -27,6 +27,19 @@ main::before {
 	width: 100%;
 	margin-top: 16px;
 	height: 90px;
+	animation: plane ease-in-out 2s infinite
+}
+
+@keyframes plane {
+	0% {
+		transform: translateY(0px)
+	}
+	50% {
+		transform: translateY(10px)
+	}
+	100% {
+		transform: translatey(0px)
+	}
 }
 
 .name {
@@ -53,7 +66,7 @@ main::before {
 	content: "";
 	position: absolute;
 	width: 3px;
-	height: 30px;
+	height: 31px;
 	background-color: #000;
 	left: -10px;
 	top: 6px;
