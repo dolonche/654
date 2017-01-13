@@ -8,7 +8,14 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	.menu {
+		display: block !important;
+	}
+	.menu-list {
+		display: none;
+	}
+}
 
 
 /* Small Devices, Tablets */
@@ -16,6 +23,10 @@
 @media only screen and (max-width: 768px) {
 	.menu-list {
 		margin-top: 120px;
+	}
+	.menu-list li {
+		display: block !important;
+		margin-left: 0 !important;
 	}
 }
 

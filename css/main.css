@@ -30,14 +30,21 @@ main::before {
 }
 
 .name {
-	text-align: center;
+	text-align: left;
 }
 
 .name h1 {
 	font-family: "Robotoregular";
 	font-size: 30px;
 	margin-top: 30px;
-	font-weight: 300
+	font-weight: 900
+}
+
+.name h1 span {
+	font-weight: 100 !important;
+	background-color: transparent !important;
+	color: #F44336;
+	opacity: 0.7
 }
 
 .menu {
@@ -47,6 +54,7 @@ main::before {
 	cursor: pointer;
 	right: 15px;
 	top: 30px;
+	display: none;
 }
 
 .menu span {
@@ -129,7 +137,8 @@ main::before {
 
 .main-daily {
 	background-color: #000;
-	background-image: url(../images/news.png);
+	background-image: url(http://mokhovitsa.ucoz.ru/DocsSchool1/school.png);
+	background-color: #fff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 350px;
@@ -499,7 +508,7 @@ footer p {
 header .row {}
 
 .menu-list {
-	display: none;
+	display: block;
 	background-color: #292929;
 	margin-top: 10px;
 }
@@ -555,6 +564,8 @@ header .row {}
 	animation-fill-mode: both
 }
 
+
+/*
 @keyframes rotater {
 	0% {
 		transform: translatex(100px);
@@ -585,6 +596,7 @@ header .row {}
 		opacity: 1
 	}
 }
+*/
 
 .inner-page-item img {
 	width: 100%;
@@ -652,4 +664,37 @@ header .row {}
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family: "robotoLight";
+}
+
+.subscribe {
+	text-align: center;
+	border: 5px solid rgba(244, 67, 54, 1);
+	margin-top: 38px;
+}
+
+.subscribe p {
+	margin-top: 20px;
+	font-family: "Robotobold";
+	font-size: 18px
+}
+
+.subscribe input {
+	padding-left: 5px;
+	width: 180px;
+	border: none;
+	background-color: #E4E4E4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.subscribe button {
+	margin-bottom: 20px;
+	width: 180px;
+	background-color: rgba(244, 67, 54, 1);
+	border: none;
+	color: aliceblue;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
