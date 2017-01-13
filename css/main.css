@@ -36,7 +36,7 @@ main::before {
 .name h1 {
 	font-family: "Robotoregular";
 	font-size: 30px;
-	margin-top: 30px;
+	margin-top: 33px;
 	font-weight: 900
 }
 
@@ -65,7 +65,7 @@ main::before {
 	position: absolute;
 	cursor: pointer;
 	right: 15px;
-	top: 30px;
+	top: 36px;
 	display: none;
 }
 
@@ -709,4 +709,9 @@ header .row {}
 	color: aliceblue;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	transition: 0.3s all
+}
+
+.subscribe button:hover {
+	opacity: 0.8
 }
