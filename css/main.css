@@ -1,458 +1,507 @@
 body {
-    overflow-x: hidden;
-    font-family: "RobotoRegular", "arial", sans-serif;
-    font-size: 15px
+	overflow-x: hidden;
+	font-family: "RobotoRegular", "arial", sans-serif;
+	font-size: 15px
 }
 
 .logo img {
-    width: 100%;
-    margin-top: 16px;
-    height: 90px;
+	width: 100%;
+	margin-top: 16px;
+	height: 90px;
 }
 
 .name {
-    text-align: center;
+	text-align: center;
 }
 
 .name h1 {
-    font-family: "Robotoregular";
-    font-size: 30px;
-    margin-top: 30px;
-    font-weight: 300
+	font-family: "Robotoregular";
+	font-size: 30px;
+	margin-top: 30px;
+	font-weight: 300
 }
 
 .menu {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    right: 15px;
-    top: 30px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+	right: 15px;
+	top: 30px;
 }
 
 .menu span {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    height: 3px;
-    width: 40px;
-    background: black;
-    cursor: pointer
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	height: 3px;
+	width: 40px;
+	background: black;
+	cursor: pointer
 }
 
 .menu span::before,
 .menu span::after {
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    content: "";
-    cursor: pointer
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #000;
+	content: "";
+	cursor: pointer
 }
 
 .menu span::before {
-    top: -15px;
+	top: -15px;
 }
 
 .menu span::after {
-    bottom: -15px;
+	bottom: -15px;
 }
 
 .menu span {
-    -webkit-transition: background 0 0.3s;
-    transition: background 0 0.3s;
+	-webkit-transition: background 0 0.3s;
+	transition: background 0 0.3s;
 }
 
 .menu span::before,
 .menu span::after {
-    -webkit-transition-duration: 0.3s, 0.3s;
-    transition-duration: 0.3s, 0.3s;
-    -webkit-transition-delay: 0.3s, 0;
-    transition-delay: 0.3s, 0;
+	-webkit-transition-duration: 0.3s, 0.3s;
+	transition-duration: 0.3s, 0.3s;
+	-webkit-transition-delay: 0.3s, 0;
+	transition-delay: 0.3s, 0;
 }
 
 .menu span::before {
-    -webkit-transition-property: top, -webkit-transform;
-    transition-property: top, transform;
+	-webkit-transition-property: top, -webkit-transform;
+	transition-property: top, transform;
 }
 
 .menu span::after {
-    -webkit-transition-property: bottom, -webkit-transform;
-    transition-property: bottom, transform;
+	-webkit-transition-property: bottom, -webkit-transform;
+	transition-property: bottom, transform;
 }
 
 .menu.active span {
-    background: none;
+	background: none;
 }
 
 .menu.active span::before {
-    top: 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .menu.active span::after {
-    bottom: 0;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+	bottom: 0;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .menu.active span::before,
 .menu.active span::after {
-    -webkit-transition-delay: 0, 0.3s;
-    transition-delay: 0, 0.3s;
+	-webkit-transition-delay: 0, 0.3s;
+	transition-delay: 0, 0.3s;
 }
 
 .main-daily {
-    background-color: #000;
-    background-image: url(../images/news.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px;
-    margin-top: 13px;
-    position: relative
+	background-color: #000;
+	background-image: url(../images/news.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	margin-top: 13px;
+	position: relative
 }
 
 .main-daily p {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    margin-top: -70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 22px;
-    background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 22px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-daily p a {
-    color: aliceblue;
-    transition: 0.4s
+	color: aliceblue;
+	transition: 0.4s
 }
 
 .main-daily p a:hover {
-    color: #F44336;
-    opacity: 0.8;
+	color: #F44336;
+	opacity: 0.8;
 }
 
 h2 {
-    position: relative;
-    font-family: "RobotoLight";
-    font-size: 24px;
-    display: inline-block;
+	position: relative;
+	font-family: "RobotoLight";
+	font-size: 24px;
+	display: inline-block;
 }
 
 h2::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    top: 100%;
-    left: 0;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	top: 100%;
+	left: 0;
 }
 
 .news h2 {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .news a {
-    text-decoration: none;
-    color: black;
-    transition: 0.2s
+	text-decoration: none;
+	color: black;
+	transition: 0.2s
 }
 
 .news a:hover {
-    color: #F44336
+	color: #F44336
 }
 
 .news p {
-    position: relative;
-    margin-top: 30px;
+	position: relative;
+	margin-top: 30px;
 }
 
 .news p::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(225, 225, 225, 1);
-    left: 0;
-    top: 100%;
-    margin-top: 10px;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(225, 225, 225, 1);
+	left: 0;
+	top: 100%;
+	margin-top: 10px;
 }
 
 .cards-container {
-    margin-top: 25px;
+	margin-top: 25px;
 }
 
 .cards-container .col-md-4 {
-    padding: 0;
+	padding: 0;
 }
 
 .cards-container .col-md-4:nth-child(1) {
-    padding-right: 26px;
+	padding-right: 26px;
 }
 
 .cards-container .col-md-4:nth-child(2) {
-    padding-right: 13px;
-    padding-left: 13px;
+	padding-right: 13px;
+	padding-left: 13px;
 }
 
 .cards-container .col-md-4:nth-child(3) {
-    padding-left: 26px;
+	padding-left: 26px;
 }
 
 .cards-container .col-md-4:nth-child() {}
 
 .cards-container .col-md-3:nth-child(1) {
-    padding-left: 0;
-    padding-right: 26px;
+	padding-left: 0;
+	padding-right: 26px;
 }
 
 .cards-container .col-md-3:nth-child(2) {
-    padding-right: 13px;
-    padding-left: 13px;
+	padding-right: 13px;
+	padding-left: 13px;
 }
 
 .cards-container .col-md-3:nth-child(3) {
-    padding-left: 26px;
-    padding-right: 0;
+	padding-left: 26px;
+	padding-right: 0;
 }
 
 .cards-container .col-md-3:nth-child(4) {
-    padding-left: 26px;
-    padding-right: 0;
+	padding-left: 26px;
+	padding-right: 0;
 }
 
 .card .tag {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .card .tag a {
-    color: black;
-    position: relative;
-    font-family: "RobotoMedium", sans-serif;
-    opacity: 0.5;
-    transition: 0.3s all;
+	color: black;
+	position: relative;
+	font-family: "RobotoMedium", sans-serif;
+	opacity: 0.5;
+	transition: 0.3s all;
 }
 
 .card .tag a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 100%;
-    left: 0;
-    background-color: #ccc;
-    transition: 0.3s all;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 100%;
+	left: 0;
+	background-color: #ccc;
+	transition: 0.3s all;
 }
 
 .card .tag a:hover {
-    opacity: 0.8;
-    color: #F44336;
+	opacity: 0.8;
+	color: #F44336;
 }
 
 .card .tag a:hover::after {
-    opacity: 0
+	opacity: 0
 }
 
 .card p {
-    text-align: center;
+	text-align: center;
 }
 
 .card p a {
-    color: inherit;
-    transition: 0.3s all;
+	color: inherit;
+	transition: 0.3s all;
 }
 
 .card p a:hover {
-    color: #F44336;
+	color: #F44336;
 }
 
 .card {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 .card img {
-    width: 100%;
+	width: 100%;
+}
+
+.card .date {
+	text-align: center;
+}
+
+.card .date span:last-of-type {
+	opacity: 0.7
+}
+
+.card .date span:first-of-type {
+	font-family: "RobotoLight", serif;
 }
 
 .tags-list {
-    margin-top: 32px;
+	margin-top: 32px;
 }
 
 .tags-list h2 {
-    margin-top: -1px;
+	margin-top: -1px;
 }
 
 .tags-list ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
 }
 
 .tags-list li {
-    box-sizing: border-box;
-    padding-left: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .tags-list ul li:nth-child(even) {
-    background-color: #F7F7F7;
+	background-color: #F7F7F7;
 }
 
 .tags-list li a {
-    color: black;
-    transition: 0.3s all;
+	color: black;
+	transition: 0.3s all;
 }
 
 .tags-list li a:hover {
-    opacity: 0.8;
-    color: #F44336;
+	opacity: 0.8;
+	color: #F44336;
 }
 
 .social-list ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
 }
 
 .social-list li {
-    box-sizing: border-box;
-    padding-left: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 15px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 15px;
 }
 
 .social-list li a {
-    color: black;
-    transition: 0.3s all;
+	color: black;
+	transition: 0.3s all;
 }
 
 .social-list li a:hover {
-    color: #F44336;
+	color: #F44336;
 }
 
 .social-list i {
-    float: left;
-    width: 40px;
-    height: 40px;
-    clear: left;
+	float: left;
+	width: 40px;
+	height: 40px;
+	clear: left;
 }
 
 .social-list li:first-child {
-    margin-top: -10px;
+	margin-top: -10px;
 }
 
 .social-list li:first-child i {
-    padding-left: 3px;
-    padding-top: 3px;
+	padding-left: 3px;
+	padding-top: 3px;
 }
 
 .social-list li:nth-child(2) i {
-    padding-left: 7px;
-    padding-top: 5px;
+	padding-left: 7px;
+	padding-top: 5px;
 }
 
 .social-list li:nth-child(3) i {
-    padding-left: 5px;
-    padding-top: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
 .social-list li:nth-child(4) i {
-    padding-left: 5px;
-    padding-top: 4px;
+	padding-left: 5px;
+	padding-top: 4px;
 }
 
 .social-list span {
-    float: left;
-    margin-top: 9px;
-    margin-left: 10px;
+	float: left;
+	margin-top: 9px;
+	margin-left: 10px;
 }
 
 .social-list h2 {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 main {
-    position: relative;
+	position: relative;
 }
 
 main::after {
-    position: absolute;
-    content: " ";
-    display: block;
-    left: 0;
-    bottom: -170px;
-    width: 100%;
-    border-style: solid;
-    border-width: 0 100vw 150px 0;
-    border-color: transparent rgba(0, 0, 0, 0.4) transparent transparent;
+	position: absolute;
+	content: " ";
+	display: block;
+	left: 0;
+	bottom: -170px;
+	width: 100%;
+	border-style: solid;
+	border-width: 0 100vw 150px 0;
+	border-color: transparent rgba(0, 0, 0, 0.4) transparent transparent;
 }
 
 .social-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-    margin-top: 60px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	margin-top: 60px;
 }
 
 .social-column li {
-    display: inline-block;
+	display: inline-block;
 }
 
 .social-column li i {
-    margin-right: 40px;
-    color: black;
-    transition: 0.3s;
+	margin-right: 40px;
+	color: black;
+	transition: 0.3s;
 }
 
 .social-column li i:hover {
-    color: #F44336;
+	color: #F44336;
 }
 
 footer {
-    position: relative;
-    margin-top: 20px;
+	position: relative;
+	margin-top: 20px;
 }
 
 footer::before {
-    position: absolute;
-    content: " ";
-    display: block;
-    left: 0;
-    width: 100%;
-    border-style: solid;
-    border-width: 0px 100vw 150px 0px;
-    transform: rotate(180deg);
-    border-color: transparent rgba(244, 67, 54, 0.75) transparent transparent;
+	position: absolute;
+	content: " ";
+	display: block;
+	left: 0;
+	width: 100%;
+	border-style: solid;
+	border-width: 0px 100vw 150px 0px;
+	transform: rotate(180deg);
+	border-color: transparent rgba(244, 67, 54, 0.75) transparent transparent;
 }
 
 footer h2 {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 footer p {
-    margin-top: 3px;
+	margin-top: 3px;
 }
 
 .inner-caption h2 {
-    text-align: center;
-    display: block;
-    font-size: 28px;
+	text-align: center;
+	display: block;
+	font-size: 28px;
 }
 
 .inner-caption h2::after {
-    display: none;
+	display: none;
+}
+
+header .row {}
+
+.menu-list {
+	display: none;
+	background-color: #292929;
+	box-sizing: padding-box;
+	padding-left: 20px;
+}
+
+.menu-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.menu-list ul li {
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.menu-list ul li:not(:first-child) {
+	margin-left: 20px;
+}
+
+.menu-list ul li a {
+	font-size: 20px;
+	color: aliceblue;
+	transition: 0.3s all;
+	font-family: "RobotoLight", sans-serif;
+}
+
+.menu-list ul li a:hover {
+	opacity: 0.7
 }
