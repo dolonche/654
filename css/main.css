@@ -44,7 +44,19 @@ main::before {
 	font-weight: 100 !important;
 	background-color: transparent !important;
 	color: #F44336;
-	opacity: 0.7
+	opacity: 0.7;
+	position: relative;
+	margin-left: 10px;
+}
+
+.name h1 span::before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 30px;
+	background-color: #000;
+	left: -10px;
+	top: 6px;
 }
 
 .menu {

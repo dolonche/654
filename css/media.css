@@ -28,6 +28,9 @@
 		display: block !important;
 		margin-left: 0 !important;
 	}
+	.card {
+		padding: 0 !important;
+	}
 }
 
 
