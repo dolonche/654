@@ -409,7 +409,7 @@ main::after {
 	width: 100%;
 	border-style: solid;
 	border-width: 0 100vw 150px 0;
-	border-color: transparent rgba(0, 0, 0, 0.4) transparent transparent;
+	border-color: transparent rgba(225, 225, 225, 0) transparent transparent;
 }
 
 .social-column ul {
@@ -417,7 +417,7 @@ main::after {
 	padding: 0;
 	margin: 0;
 	text-align: right;
-	margin-top: 60px;
+	margin-top: 75px;
 }
 
 .social-column li {
@@ -425,9 +425,13 @@ main::after {
 }
 
 .social-column li i {
-	margin-right: 40px;
+	margin-right: 30px;
 	color: black;
 	transition: 0.3s;
+}
+
+.social-column li:last-child i {
+	margin-right: 0;
 }
 
 .social-column li i:hover {
@@ -448,15 +452,19 @@ footer::before {
 	border-style: solid;
 	border-width: 0px 100vw 150px 0px;
 	transform: rotate(180deg);
-	border-color: transparent rgba(244, 67, 54, 0.75) transparent transparent;
+	border-color: transparent rgba(41, 41, 41, 0.75) transparent transparent;
 }
 
 footer h2 {
 	margin-top: 30px;
+	color: aliceblue;
+	font-family: "RobotoLight";
 }
 
 footer p {
 	margin-top: 3px;
+	color: aliceblue;
+	font-family: "RobotoLight";
 }
 
 .inner-caption h2 {
@@ -475,7 +483,7 @@ header .row {}
 	display: none;
 	background-color: #292929;
 	box-sizing: padding-box;
-	padding-left: 20px;
+	margin-top: 10px;
 }
 
 .menu-list ul {
@@ -504,4 +512,58 @@ header .row {}
 
 .menu-list ul li a:hover {
 	opacity: 0.7
+}
+
+.button {
+	text-align: center;
+	margin-top: 30px;
+	mb30
+}
+
+.button button {
+	width: 220px;
+	border: none;
+	background-color: #292929;
+	color: aliceblue;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	animation: rotater infinite cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s;
+	transition: 1s all;
+}
+
+.button button:hover {
+	opacity: 0.7;
+	animation: rotater2 linear 1s;
+	animation-fill-mode: both
+}
+
+@keyframes rotater {
+	0% {
+		transform: translatex(100px);
+	}
+	50% {
+		transform: translatex(-100px);
+		width: 500px;
+		opacity: 0.5;
+		color: cyan
+	}
+	100% {
+		transform: translatex(100px);
+		width: 200px;
+		opacity: 1
+	}
+}
+
+@keyframes rotater2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(360deg)
+	}
+	100% {
+		transform: translatex(-1000px);
+		width: 200px;
+		opacity: 1
+	}
 }
