@@ -15,6 +15,10 @@
 	.menu-list {
 		display: none;
 	}
+	.col-md-12 .cards-container .card:last-of-type {
+		padding-left: 0;
+		padding-right: 25px;
+	}
 }
 
 
